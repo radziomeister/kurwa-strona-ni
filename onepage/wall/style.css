@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    height: auto;
+    background-color: rgba(23, 23, 24, 0.959);
+    overflow: hidden;
+}
+
+#slider {
+    overflow: hidden;
+    height: 880px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+
+#slider img {
+    float: left;
+    width: 20%;
+}
+
+#slider h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(53, 47, 47);
+    text-shadow: 2px 1px #464443;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: 0;
+    }
+}
+
+#navbar {
+    position: sticky;
+    height: 80px;
+    border: 2px transparent;
+    background-color: rgba(19, 15, 15, 0.726);
+}
+
+#navbar a {
+    position: relative;
+    float: left;
+    top: 30px;
+    left: 85%;
+    margin-right: 30px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(78, 78, 78);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#second_section {
+    height: 600px;
+}
+
+#second_section a {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(53, 47, 47);
+    text-shadow: 2px 1px #464443;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#second_section p {
+    text-align: center;
+    margin-top: 20%;
+    position: relative;
+    color: rgb(78, 74, 74);
+    text-shadow: 2px 1px #313130;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#move_home {
+    position: relative;
+    height: 40px;
+    width: auto;
+}
+
+#move_home a {
+    margin: 10px;
+    font-size: 15px;
+    position: relative;
+    float: left;
+    margin-right: 0;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(78, 78, 78);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 60px;
+}
+
+.sidenav h1 {
+    text-align: center;
+    margin-top: 20%;
+    position: relative;
+    color: rgb(78, 74, 74);
+    text-shadow: 2px 1px #313130;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#mySidenav a {
+    margin: 10px;
+    font-size: 15px;
+    position: relative;
+    float: left;
+    margin-right: 0;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(78, 78, 78);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidenav .close_button {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

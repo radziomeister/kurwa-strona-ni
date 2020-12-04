@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark One Page</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="#navbar" id="Home">Home</a>
+        <a href="#second_section" id="Help">More</a>
+        <a href="#" id="About us">About us</a>
+    </div>
+
+    <div id="slider">
+
+        <figure>
+            <img src="/onepage/wall/wall2.png">
+            <img src="/onepage/wall/wall3.png">
+            <img src="/onepage/wall/wall4.png">
+        </figure>
+        <h1>Programming is a free world experiment</h1>
+    </div>
+
+    <div id="second_section">
+        <p>"Some people dream of success, while others wake up and work hard at it." <br><br> "Most great people have achieved their greatest success just one step beyond their greatest failure." <br><br> "Success comes to those who become success conscious."
+            <br><br>"Any idea, plan, or purpose may be placed in the mind through repetition of thought."</p>
+
+        <div id="move_home">
+            <a href="#navbar">Home</a>
+            <a href="#right_site" onclick="openNav()">--></a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <h1>"Some people dream of success, while others wake up and work hard at it."</h1>
+            <a href="#second_section" class="close_button" onclick="closeNav()">Back</a>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
